@@ -1,0 +1,7 @@
+asyncio
+boto3
+psycopg2-binary
+python-dotenv
+requests
+httpx  # Para llamadas asíncronas a APIs
+msal  # Para autenticación Microsoft

@@ -1,0 +1,38 @@
+2025-10-11 15:30:16,595 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:30:16,619 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:31:44,123 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:31:44,133 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:34:29,377 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:34:29,384 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:39:34,894 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:39:34,928 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:43:56,749 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:43:56,751 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:44:22,003 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:44:22,003 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:44:39,766 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:44:39,766 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:44:58,047 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:44:58,063 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:45:17,632 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:45:17,632 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:51:20,874 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:51:20,906 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:52:00,246 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-11 15:52:00,387 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-11 15:52:00,592 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-11 15:54:00,836 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:54:00,861 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:54:24,361 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-11 15:54:24,368 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-11 15:55:05,456 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-11 15:55:05,632 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-11 15:55:05,836 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-11 15:55:05,845 - INFO - Tarea pendiente: 20611097400-09-EG07-859.pdf
+2025-10-11 15:55:05,856 - INFO - Tarea pendiente: 20611097400-09-EG07-860.pdf
+2025-10-11 15:55:05,862 - INFO - Tarea pendiente: 20613530101-09-EG07-475.pdf
+2025-10-11 15:55:07,671 - INFO - Archivado directo: PDF-DOC-E001-48920613530101.pdf
+2025-10-11 15:55:09,219 - INFO - Archivado directo: PDF-DOC-E001-87420611097400.pdf
+2025-10-11 15:55:11,048 - INFO - Archivado directo: PDF-DOC-E001-87520611097400.pdf
+2025-10-11 15:55:12,806 - INFO - Archivado directo: RHE10406916087E00119.pdf
+2025-10-11 15:55:12,809 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3
