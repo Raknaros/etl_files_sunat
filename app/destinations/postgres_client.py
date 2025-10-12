@@ -23,7 +23,17 @@ class PostgresClient:
     def check_file_processed(self, file_name):
         """
         Verifica procesamiento según estrategia del tipo de archivo.
+        En modo prueba, siempre retorna False para evitar conexiones PostgreSQL.
         """
+        # Verificar si estamos en modo prueba
+        import os
+        import sys
+        test_mode = len(sys.argv) > 1 and sys.argv[1] == "--test"
+        test_mode = test_mode or os.getenv("ETL_TEST_MODE", "false").lower() == "true"
+
+        if test_mode:
+            return False  # En modo prueba, no verificar PostgreSQL
+
         from app.config import match_file_pattern
 
         tipo, data, _ = match_file_pattern(file_name)

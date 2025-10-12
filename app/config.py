@@ -24,11 +24,15 @@ PATRONES_NO_ETL = {
     "credito_pdf": (re.compile(r"^PDF-NOTA_CREDITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(pdf)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "debito_pdf": (re.compile(r"^PDF-NOTA_DEBITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(pdf)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "recibo_honorarios_pdf": (re.compile(r"^RHE(\d{11})([A-Z0-9]{4})(\d{1,8})\.(pdf)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
+    "guia_remision_pdf": (re.compile(r"^(\d{11})-09-([A-Z0-9]{4})-(\d{1,8})\.(pdf)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
+
 }
 PATRONES_NEED_ETL = {
-    "reporte_planilla_zip": (re.compile(r"^(\d{11})_([A-Z]{3})+_(\d{8})\.(zip)$", re.IGNORECASE), ["ruc", "codigo", "fecha", "ext"]),
+    # Archivos individuales que necesitan ETL
     "declaraciones_pagos": (re.compile(r"^DetalleDeclaraciones_(\d{11})_(\d{14})\.(xlsx)$", re.IGNORECASE), ["ruc", "timestamp", "ext"]),
-    "guia_remision": (re.compile(r"^(\d{11})-09-([A-Z0-9]{4})-(\d{1,8})\.(pdf|xml)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
+    "guia_remision_xml": (re.compile(r"^(\d{11})-09-([A-Z0-9]{4})-(\d{1,8})\.(xml)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
+
+    # ZIPs estructurados que necesitan ETL (tratados como archivos individuales)
     "sire_propuesta_compras": (re.compile(r"^(\d{11})-(\d{8})-(\d{4,6})-propuesta\.(zip|csv)$", re.IGNORECASE), ["ruc", "date", "time"]),
     "sire_propuesta_ventas": (re.compile(r"^LE(\d{11})(\d{6})1?(\d{10})EXP2\.(zip|csv)$", re.IGNORECASE), ["ruc", "periodo", "codigo"]),
     "factura_xml": (re.compile(r"^FACTURA([A-Z0-9]{4})-?(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
@@ -36,6 +40,7 @@ PATRONES_NEED_ETL = {
     "credito_xml": (re.compile(r"^NOTA_CREDITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "debito_xml": (re.compile(r"^NOTA_DEBITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "recibo_xml": (re.compile(r"^RHE(\d{11})(\d{1,8})\.(xml)$", re.IGNORECASE), ["ruc", "correlativo", "ext"]),
+    "reporte_planilla_zip": (re.compile(r"^(\d{11})_([A-Z]{3})+_(\d{8})\.(zip)$", re.IGNORECASE), ["ruc", "codigo", "fecha", "ext"]),
 }
 
 class Config:

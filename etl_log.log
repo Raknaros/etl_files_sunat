@@ -36,3 +36,437 @@
 2025-10-11 15:55:11,048 - INFO - Archivado directo: PDF-DOC-E001-87520611097400.pdf
 2025-10-11 15:55:12,806 - INFO - Archivado directo: RHE10406916087E00119.pdf
 2025-10-11 15:55:12,809 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3
+2025-10-12 09:58:56,655 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 09:58:56,674 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 09:59:33,299 - INFO - Procesando archivo comprimido: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 09:59:38,773 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-12 09:59:38,930 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 09:59:39,129 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 09:59:41,228 - INFO - Archivado directo: 20611097400-09-EG07-859.pdf
+2025-10-12 09:59:42,976 - INFO - Archivado directo: 20611097400-09-EG07-860.pdf
+2025-10-12 09:59:44,744 - INFO - Archivado directo: 20613530101-09-EG07-475.pdf
+2025-10-12 09:59:44,868 - INFO - Duplicado S3: PDF-DOC-E001-48920613530101.pdf
+2025-10-12 09:59:44,988 - INFO - Duplicado S3: PDF-DOC-E001-87420611097400.pdf
+2025-10-12 09:59:45,128 - INFO - Duplicado S3: PDF-DOC-E001-87520611097400.pdf
+2025-10-12 09:59:45,248 - INFO - Duplicado S3: RHE10406916087E00119.pdf
+2025-10-12 10:05:12,231 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 10:05:12,256 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 10:06:00,997 - INFO - Procesando archivo comprimido: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:06,387 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-12 10:06:06,554 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 10:06:06,687 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 10:06:06,807 - INFO - Duplicado S3: 20611097400-09-EG07-859.pdf
+2025-10-12 10:06:07,028 - INFO - Duplicado S3: 20611097400-09-EG07-860.pdf
+2025-10-12 10:06:07,232 - INFO - Duplicado S3: 20613530101-09-EG07-475.pdf
+2025-10-12 10:06:07,438 - INFO - Duplicado S3: PDF-DOC-E001-48920613530101.pdf
+2025-10-12 10:06:07,640 - INFO - Duplicado S3: PDF-DOC-E001-87420611097400.pdf
+2025-10-12 10:06:07,761 - INFO - Duplicado S3: PDF-DOC-E001-87520611097400.pdf
+2025-10-12 10:06:07,897 - INFO - Duplicado S3: RHE10406916087E00119.pdf
+2025-10-12 10:06:08,021 - ERROR - Error extrayendo 20553837660-09-EG07-3.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,137 - ERROR - Error extrayendo 20606283858-09-EG07-33.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,248 - ERROR - Error extrayendo 20606283858-09-EG07-52.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,462 - ERROR - Error extrayendo 20606283858-09-EG07-53.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,579 - ERROR - Error extrayendo 20606482753-09-EG07-169.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,767 - ERROR - Error extrayendo 20607829986-09-EG07-12.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:08,968 - ERROR - Error extrayendo 20607829986-09-EG07-13.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,093 - ERROR - Error extrayendo 20607829986-09-EG07-14.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,277 - ERROR - Error extrayendo 20607829986-09-EG07-15.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,488 - ERROR - Error extrayendo 20609672669-09-EG07-199.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,607 - ERROR - Error extrayendo 20609672669-09-EG07-200.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,740 - ERROR - Error extrayendo 20609753723-09-EG07-296.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:09,898 - ERROR - Error extrayendo 20611198427-09-EG07-519.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,042 - ERROR - Error extrayendo 20613333593-09-EG07-266.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,176 - ERROR - Error extrayendo 20613333593-09-EG07-267.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,407 - ERROR - Error extrayendo 20613333593-09-EG07-268.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,526 - ERROR - Error extrayendo 20613333593-09-EG07-58.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,647 - ERROR - Error extrayendo 20613333593-09-EG07-59.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:10,814 - ERROR - Error extrayendo 20613333593-09-EG07-85.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,020 - ERROR - Error extrayendo 20613333593-09-EG07-86.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,227 - ERROR - Error extrayendo bod_092660_20551257836_2660.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,361 - ERROR - Error extrayendo recgen_20606283858_0230069096486_20230310141436_744404039.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,478 - ERROR - Error extrayendo reporteec_ficharuc_20610428101_20241108095901.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,597 - ERROR - Error extrayendo reporteec_ficharuc_20610704281_20250129211900.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,717 - ERROR - Error extrayendo rvalores_10085917213_0290077072146_20241128145831_919009353.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:11,840 - ERROR - Error extrayendo rvalores_10085917213_0290077072350_20241128145831_919009286.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,007 - ERROR - Error extrayendo rvalores_10472830126_007334820247E1300_20240503123616_856598715.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,123 - ERROR - Error extrayendo rvalores_10472830126_0241803348451_20240610174123_866669833.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,251 - ERROR - Error extrayendo rvalores_10479567307_22406201308601_20240709155501_875799735.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,450 - ERROR - Error extrayendo rvalores_10479567307_224062013086_20240708135705_875410937.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,657 - ERROR - Error extrayendo rvalores_10726501306_000143020247K0200_20240611115429_866892900.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:12,865 - ERROR - Error extrayendo rvalores_20522580491_003765820247EC100_20241007100452_902461888.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,069 - ERROR - Error extrayendo rvalores_20551257836_019854620247E1300_20241114102453_914544250.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,273 - ERROR - Error extrayendo rvalores_20606283858_002219020227E1110_20220221152232_648859376.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,479 - ERROR - Error extrayendo rvalores_20606283858_009240320217E1110_20211029150515_604612967.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,681 - ERROR - Error extrayendo rvalores_20606283858_015952620217E1110_20211216074016_620251038.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,847 - ERROR - Error extrayendo rvalores_20606283858_0290076816972_20241018143317_905157855.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:13,967 - ERROR - Error extrayendo rvalores_20606283858_0290077315631_20250110130548_932952004.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,087 - ERROR - Error extrayendo rvalores_20609943611_0241803471018_20240703153345_874282322.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,297 - ERROR - Error extrayendo 20609672669-09-EG07-629.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,412 - ERROR - Error extrayendo ridetrac_10479567307_0630240159809_20240626165019_871452215.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,537 - ERROR - Error extrayendo rilf_10726501306_1030240104343_20240417162200_851609467.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,663 - ERROR - Error extrayendo rmgen_10472830126_023-002-2648606_20240625165955_871057646.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,782 - ERROR - Error extrayendo rmgen_10479567307_063-002-0168245_20240708120635_875376894.pdf de SUNAT_Consolidado_20250817_000358.zip: Archivo comprimido no encontrado: C:\Users\Raknaros\AppData\Local\Temp\SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:06:14,782 - WARNING - No se pudo extraer RUC de constancia_20240610174123_00231800020003472458_0241803348451_866669835.pdf
+2025-10-12 10:06:14,782 - WARNING - No se pudo extraer RUC de constancia_20240626165019_00630240290003515217_0630240159809_871452216.pdf
+2025-10-12 10:06:16,062 - INFO - Tarea pendiente: 10255508739_IDE_01012025.zip
+2025-10-12 10:06:16,921 - INFO - Tarea pendiente: 10726501306_IDE_26122024.zip
+2025-10-12 10:06:17,780 - INFO - Tarea pendiente: 20548030529_TRA_01012025.zip
+2025-10-12 10:06:18,642 - INFO - Tarea pendiente: 20550103746_TRA_01012025.zip
+2025-10-12 10:06:19,483 - INFO - Tarea pendiente: 20605380451_TRA_01012025.zip
+2025-10-12 10:06:19,483 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3
+2025-10-12 10:11:26,828 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 10:11:26,844 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 10:12:26,938 - INFO - Procesando archivo comprimido: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:32,579 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-12 10:12:32,771 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 10:12:32,974 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 10:12:33,098 - INFO - Duplicado S3: 20611097400-09-EG07-859.pdf
+2025-10-12 10:12:33,217 - INFO - Duplicado S3: 20611097400-09-EG07-860.pdf
+2025-10-12 10:12:33,334 - INFO - Duplicado S3: 20613530101-09-EG07-475.pdf
+2025-10-12 10:12:33,467 - INFO - Duplicado S3: PDF-DOC-E001-48920613530101.pdf
+2025-10-12 10:12:33,589 - INFO - Duplicado S3: PDF-DOC-E001-87420611097400.pdf
+2025-10-12 10:12:33,734 - INFO - Duplicado S3: PDF-DOC-E001-87520611097400.pdf
+2025-10-12 10:12:33,858 - INFO - Duplicado S3: RHE10406916087E00119.pdf
+2025-10-12 10:12:34,984 - INFO - Extraído y archivado: 20553837660-09-EG07-3.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:35,487 - INFO - Extraído y archivado: 20606283858-09-EG07-33.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:35,908 - INFO - Extraído y archivado: 20606283858-09-EG07-52.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:36,437 - INFO - Extraído y archivado: 20606283858-09-EG07-53.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:36,956 - INFO - Extraído y archivado: 20606482753-09-EG07-169.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:37,584 - INFO - Extraído y archivado: 20607829986-09-EG07-12.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:38,149 - INFO - Extraído y archivado: 20607829986-09-EG07-13.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:38,549 - INFO - Extraído y archivado: 20607829986-09-EG07-14.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:39,016 - INFO - Extraído y archivado: 20607829986-09-EG07-15.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:39,585 - INFO - Extraído y archivado: 20609672669-09-EG07-199.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:40,107 - INFO - Extraído y archivado: 20609672669-09-EG07-200.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:40,544 - INFO - Extraído y archivado: 20609753723-09-EG07-296.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:41,058 - INFO - Extraído y archivado: 20611198427-09-EG07-519.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:41,477 - INFO - Extraído y archivado: 20613333593-09-EG07-266.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:42,092 - INFO - Extraído y archivado: 20613333593-09-EG07-267.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:42,576 - INFO - Extraído y archivado: 20613333593-09-EG07-268.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:43,177 - INFO - Extraído y archivado: 20613333593-09-EG07-58.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:43,624 - INFO - Extraído y archivado: 20613333593-09-EG07-59.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:44,138 - INFO - Extraído y archivado: 20613333593-09-EG07-85.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:44,550 - INFO - Extraído y archivado: 20613333593-09-EG07-86.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:45,427 - INFO - Extraído y archivado: bod_092660_20551257836_2660.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:46,014 - INFO - Extraído y archivado: recgen_20606283858_0230069096486_20230310141436_744404039.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:46,637 - INFO - Extraído y archivado: reporteec_ficharuc_20610428101_20241108095901.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:47,117 - INFO - Extraído y archivado: reporteec_ficharuc_20610704281_20250129211900.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:47,780 - INFO - Extraído y archivado: rvalores_10085917213_0290077072146_20241128145831_919009353.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:48,356 - INFO - Extraído y archivado: rvalores_10085917213_0290077072350_20241128145831_919009286.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:49,038 - INFO - Extraído y archivado: rvalores_10472830126_007334820247E1300_20240503123616_856598715.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:49,844 - INFO - Extraído y archivado: rvalores_10472830126_0241803348451_20240610174123_866669833.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:50,388 - INFO - Extraído y archivado: rvalores_10479567307_22406201308601_20240709155501_875799735.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:50,986 - INFO - Extraído y archivado: rvalores_10479567307_224062013086_20240708135705_875410937.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:51,670 - INFO - Extraído y archivado: rvalores_10726501306_000143020247K0200_20240611115429_866892900.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:52,312 - INFO - Extraído y archivado: rvalores_20522580491_003765820247EC100_20241007100452_902461888.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:52,970 - INFO - Extraído y archivado: rvalores_20551257836_019854620247E1300_20241114102453_914544250.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:53,484 - INFO - Extraído y archivado: rvalores_20606283858_002219020227E1110_20220221152232_648859376.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:54,214 - INFO - Extraído y archivado: rvalores_20606283858_009240320217E1110_20211029150515_604612967.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:54,893 - INFO - Extraído y archivado: rvalores_20606283858_015952620217E1110_20211216074016_620251038.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:55,529 - INFO - Extraído y archivado: rvalores_20606283858_0290076816972_20241018143317_905157855.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:56,960 - INFO - Extraído y archivado: rvalores_20606283858_0290077315631_20250110130548_932952004.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:58,294 - INFO - Extraído y archivado: rvalores_20609943611_0241803471018_20240703153345_874282322.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:58,774 - INFO - Extraído y archivado: 20609672669-09-EG07-629.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:12:59,462 - INFO - Extraído y archivado: ridetrac_10479567307_0630240159809_20240626165019_871452215.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:13:00,037 - INFO - Extraído y archivado: rilf_10726501306_1030240104343_20240417162200_851609467.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:13:00,650 - INFO - Extraído y archivado: rmgen_10472830126_023-002-2648606_20240625165955_871057646.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:13:01,266 - INFO - Extraído y archivado: rmgen_10479567307_063-002-0168245_20240708120635_875376894.pdf de SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:13:01,266 - WARNING - No se pudo extraer RUC de constancia_20240610174123_00231800020003472458_0241803348451_866669835.pdf
+2025-10-12 10:13:01,269 - WARNING - No se pudo extraer RUC de constancia_20240626165019_00630240290003515217_0630240159809_871452216.pdf
+2025-10-12 10:13:02,567 - INFO - Tarea pendiente: 10255508739_IDE_01012025.zip
+2025-10-12 10:13:03,427 - INFO - Tarea pendiente: 10726501306_IDE_26122024.zip
+2025-10-12 10:13:04,282 - INFO - Tarea pendiente: 20548030529_TRA_01012025.zip
+2025-10-12 10:13:05,139 - INFO - Tarea pendiente: 20550103746_TRA_01012025.zip
+2025-10-12 10:13:05,998 - INFO - Tarea pendiente: 20605380451_TRA_01012025.zip
+2025-10-12 10:13:05,998 - INFO - Archivo comprimido limpiado: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:13:05,998 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3
+2025-10-12 10:30:21,501 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 10:30:21,571 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 10:40:32,979 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 10:40:33,020 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 10:40:43,003 - INFO - Procesando archivo comprimido: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:40:45,392 - INFO - Procesando archivo comprimido: 10779181575-20250819-190546-propuesta.zip
+2025-10-12 10:40:46,642 - INFO - Procesando archivo comprimido: 10779181575-20250819-190600-propuesta.zip
+2025-10-12 10:40:47,970 - INFO - Procesando archivo comprimido: 10779181575-20250819-190956-propuesta.zip
+2025-10-12 10:40:49,490 - INFO - Procesando archivo comprimido: 10779181575-20250819-191007-propuesta.zip
+2025-10-12 10:40:51,000 - INFO - Procesando archivo comprimido: 10779181575-20250819-191027-propuesta.zip
+2025-10-12 10:40:52,553 - INFO - Procesando archivo comprimido: 10779181575-20250819-191039-propuesta.zip
+2025-10-12 10:40:53,988 - INFO - Procesando archivo comprimido: 10779181575-20250819-191056-propuesta.zip
+2025-10-12 10:40:55,519 - INFO - Procesando archivo comprimido: 10779181575-20250819-191324-propuesta.zip
+2025-10-12 10:40:56,852 - INFO - Procesando archivo comprimido: 10779181575-20250819-191338-propuesta.zip
+2025-10-12 10:40:58,114 - INFO - Procesando archivo comprimido: 10779181575-20250819-191352-propuesta.zip
+2025-10-12 10:40:59,458 - INFO - Procesando archivo comprimido: 10779181575-20250819-191404-propuesta.zip
+2025-10-12 10:41:00,851 - INFO - Procesando archivo comprimido: 10779181575-20250819-191419-propuesta.zip
+2025-10-12 10:41:02,182 - INFO - Procesando archivo comprimido: 10779181575-20250819-191441-propuesta.zip
+2025-10-12 10:41:03,516 - INFO - Procesando archivo comprimido: 10779181575-20250819-191453-propuesta.zip
+2025-10-12 10:41:04,844 - INFO - Procesando archivo comprimido: 10779181575-20250819-191505-propuesta.zip
+2025-10-12 10:41:06,164 - INFO - Procesando archivo comprimido: 10779181575-20250819-191517-propuesta.zip
+2025-10-12 10:41:07,401 - INFO - Procesando archivo comprimido: 10779181575-20250819-191528-propuesta.zip
+2025-10-12 10:41:08,760 - INFO - Procesando archivo comprimido: 10779181575-20250819-191554-propuesta.zip
+2025-10-12 10:41:10,076 - INFO - Procesando archivo comprimido: 10779181575-20250819-191607-propuesta.zip
+2025-10-12 10:41:11,400 - INFO - Procesando archivo comprimido: 10779181575-20250819-191617-propuesta.zip
+2025-10-12 10:41:12,645 - INFO - Procesando archivo comprimido: 10779181575-20250819-191637-propuesta.zip
+2025-10-12 10:41:13,978 - INFO - Procesando archivo comprimido: 10779181575-20250819-191649-propuesta.zip
+2025-10-12 10:41:15,309 - INFO - Procesando archivo comprimido: 10779181575-20250819-191702-propuesta.zip
+2025-10-12 10:41:16,618 - INFO - Procesando archivo comprimido: 10779181575-20250819-191712-propuesta.zip
+2025-10-12 10:41:17,958 - INFO - Procesando archivo comprimido: 10779181575-20250819-191809-propuesta.zip
+2025-10-12 10:41:19,409 - INFO - Procesando archivo comprimido: 10779181575-20250819-191901-propuesta.zip
+2025-10-12 10:41:20,705 - INFO - Procesando archivo comprimido: 10779181575-20250819-191931-propuesta.zip
+2025-10-12 10:41:21,957 - INFO - Procesando archivo comprimido: 10779181575-20250819-192540-propuesta.zip
+2025-10-12 10:41:23,281 - INFO - Procesando archivo comprimido: 10779181575-20250819-192553-propuesta.zip
+2025-10-12 10:41:26,656 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-12 10:41:26,923 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 10:41:27,132 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 10:41:27,340 - INFO - Duplicado S3: 20611097400-09-EG07-859.pdf
+2025-10-12 10:41:27,542 - INFO - Duplicado S3: 20611097400-09-EG07-860.pdf
+2025-10-12 10:41:27,749 - INFO - Duplicado S3: 20613530101-09-EG07-475.pdf
+2025-10-12 10:41:29,901 - INFO - Archivado directo: PDF-DOC-E001108720609672669.pdf
+2025-10-12 10:41:31,551 - INFO - Archivado directo: PDF-DOC-E001109420609672669.pdf
+2025-10-12 10:41:31,683 - INFO - Duplicado S3: PDF-DOC-E001-48920613530101.pdf
+2025-10-12 10:41:33,375 - INFO - Archivado directo: PDF-DOC-E00153220613530101.pdf
+2025-10-12 10:41:35,237 - INFO - Archivado directo: PDF-DOC-E00153420613530101.pdf
+2025-10-12 10:41:36,964 - INFO - Archivado directo: PDF-DOC-E00153920613530101.pdf
+2025-10-12 10:41:37,169 - INFO - Duplicado S3: PDF-DOC-E001-87420611097400.pdf
+2025-10-12 10:41:37,376 - INFO - Duplicado S3: PDF-DOC-E001-87520611097400.pdf
+2025-10-12 10:41:39,113 - INFO - Archivado directo: PDF-DOC-E00190320611097400.pdf
+2025-10-12 10:41:40,858 - INFO - Archivado directo: PDF-DOC-E00190720611097400.pdf
+2025-10-12 10:41:42,960 - INFO - Archivado directo: reporteec_rentas_10072541567_20250818224427.pdf
+2025-10-12 10:41:43,101 - INFO - Duplicado S3: RHE10406916087E00119.pdf
+2025-10-12 10:41:45,406 - INFO - Archivado directo: rvalores_20548030529_008300520257E1300_20250620120748_981110501.pdf
+2025-10-12 10:41:47,624 - INFO - Archivado directo: rvalores_20548030529_008729220257E1300_20250625152654_982771808.pdf
+2025-10-12 10:41:47,812 - INFO - Duplicado S3: 20553837660-09-EG07-3.pdf
+2025-10-12 10:41:47,947 - INFO - Duplicado S3: 20606283858-09-EG07-33.pdf
+2025-10-12 10:41:48,078 - INFO - Duplicado S3: 20606283858-09-EG07-52.pdf
+2025-10-12 10:41:48,226 - INFO - Duplicado S3: 20606283858-09-EG07-53.pdf
+2025-10-12 10:41:48,432 - INFO - Duplicado S3: 20606482753-09-EG07-169.pdf
+2025-10-12 10:41:48,638 - INFO - Duplicado S3: 20607829986-09-EG07-12.pdf
+2025-10-12 10:41:48,844 - INFO - Duplicado S3: 20607829986-09-EG07-13.pdf
+2025-10-12 10:41:49,048 - INFO - Duplicado S3: 20607829986-09-EG07-14.pdf
+2025-10-12 10:41:49,253 - INFO - Duplicado S3: 20607829986-09-EG07-15.pdf
+2025-10-12 10:41:49,408 - INFO - Duplicado S3: 20609672669-09-EG07-199.pdf
+2025-10-12 10:41:49,534 - INFO - Duplicado S3: 20609672669-09-EG07-200.pdf
+2025-10-12 10:41:49,660 - INFO - Duplicado S3: 20609753723-09-EG07-296.pdf
+2025-10-12 10:41:49,870 - INFO - Duplicado S3: 20611198427-09-EG07-519.pdf
+2025-10-12 10:41:50,072 - INFO - Duplicado S3: 20613333593-09-EG07-266.pdf
+2025-10-12 10:41:50,278 - INFO - Duplicado S3: 20613333593-09-EG07-267.pdf
+2025-10-12 10:41:50,603 - INFO - Duplicado S3: 20613333593-09-EG07-268.pdf
+2025-10-12 10:41:50,767 - INFO - Duplicado S3: 20613333593-09-EG07-58.pdf
+2025-10-12 10:41:50,892 - INFO - Duplicado S3: 20613333593-09-EG07-59.pdf
+2025-10-12 10:41:51,054 - INFO - Duplicado S3: 20613333593-09-EG07-85.pdf
+2025-10-12 10:41:51,193 - INFO - Duplicado S3: 20613333593-09-EG07-86.pdf
+2025-10-12 10:41:51,401 - INFO - Duplicado S3: bod_092660_20551257836_2660.pdf
+2025-10-12 10:41:51,668 - INFO - Duplicado S3: recgen_20606283858_0230069096486_20230310141436_744404039.pdf
+2025-10-12 10:41:51,809 - INFO - Duplicado S3: reporteec_ficharuc_20610428101_20241108095901.pdf
+2025-10-12 10:41:52,147 - INFO - Duplicado S3: reporteec_ficharuc_20610704281_20250129211900.pdf
+2025-10-12 10:41:52,355 - INFO - Duplicado S3: rvalores_10085917213_0290077072146_20241128145831_919009353.pdf
+2025-10-12 10:41:52,539 - INFO - Duplicado S3: rvalores_10085917213_0290077072350_20241128145831_919009286.pdf
+2025-10-12 10:41:52,747 - INFO - Duplicado S3: rvalores_10472830126_007334820247E1300_20240503123616_856598715.pdf
+2025-10-12 10:41:52,954 - INFO - Duplicado S3: rvalores_10472830126_0241803348451_20240610174123_866669833.pdf
+2025-10-12 10:41:53,158 - INFO - Duplicado S3: rvalores_10479567307_22406201308601_20240709155501_875799735.pdf
+2025-10-12 10:41:53,364 - INFO - Duplicado S3: rvalores_10479567307_224062013086_20240708135705_875410937.pdf
+2025-10-12 10:41:53,553 - INFO - Duplicado S3: rvalores_10726501306_000143020247K0200_20240611115429_866892900.pdf
+2025-10-12 10:41:53,758 - INFO - Duplicado S3: rvalores_20522580491_003765820247EC100_20241007100452_902461888.pdf
+2025-10-12 10:41:53,963 - INFO - Duplicado S3: rvalores_20551257836_019854620247E1300_20241114102453_914544250.pdf
+2025-10-12 10:41:54,168 - INFO - Duplicado S3: rvalores_20606283858_002219020227E1110_20220221152232_648859376.pdf
+2025-10-12 10:41:54,371 - INFO - Duplicado S3: rvalores_20606283858_009240320217E1110_20211029150515_604612967.pdf
+2025-10-12 10:41:54,570 - INFO - Duplicado S3: rvalores_20606283858_015952620217E1110_20211216074016_620251038.pdf
+2025-10-12 10:41:54,781 - INFO - Duplicado S3: rvalores_20606283858_0290076816972_20241018143317_905157855.pdf
+2025-10-12 10:41:54,986 - INFO - Duplicado S3: rvalores_20606283858_0290077315631_20250110130548_932952004.pdf
+2025-10-12 10:41:55,192 - INFO - Duplicado S3: rvalores_20609943611_0241803471018_20240703153345_874282322.pdf
+2025-10-12 10:41:55,392 - INFO - Duplicado S3: 20609672669-09-EG07-629.pdf
+2025-10-12 10:41:55,600 - INFO - Duplicado S3: ridetrac_10479567307_0630240159809_20240626165019_871452215.pdf
+2025-10-12 10:41:55,782 - INFO - Duplicado S3: rilf_10726501306_1030240104343_20240417162200_851609467.pdf
+2025-10-12 10:41:55,909 - INFO - Duplicado S3: rmgen_10472830126_023-002-2648606_20240625165955_871057646.pdf
+2025-10-12 10:41:56,113 - INFO - Duplicado S3: rmgen_10479567307_063-002-0168245_20240708120635_875376894.pdf
+2025-10-12 10:41:56,113 - WARNING - No se pudo extraer RUC de constancia_20240610174123_00231800020003472458_0241803348451_866669835.pdf
+2025-10-12 10:41:56,113 - WARNING - No se pudo extraer RUC de constancia_20240626165019_00630240290003515217_0630240159809_871452216.pdf
+2025-10-12 10:41:56,123 - INFO - Tarea pendiente (modo prueba): 10255508739_IDE_01012025.zip
+2025-10-12 10:41:56,131 - INFO - Tarea pendiente (modo prueba): 10726501306_IDE_26122024.zip
+2025-10-12 10:41:56,139 - INFO - Tarea pendiente (modo prueba): 20548030529_TRA_01012025.zip
+2025-10-12 10:41:56,147 - INFO - Tarea pendiente (modo prueba): 20550103746_TRA_01012025.zip
+2025-10-12 10:41:56,155 - INFO - Tarea pendiente (modo prueba): 20605380451_TRA_01012025.zip
+2025-10-12 10:41:56,163 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1905-propuesta.csv
+2025-10-12 10:41:56,171 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1906-propuesta.csv
+2025-10-12 10:41:56,180 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1909-propuesta.csv
+2025-10-12 10:41:56,188 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1910-propuesta.csv
+2025-10-12 10:41:56,195 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1910-propuesta.csv
+2025-10-12 10:41:56,202 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1910-propuesta.csv
+2025-10-12 10:41:56,209 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1910-propuesta.csv
+2025-10-12 10:41:56,216 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1913-propuesta.csv
+2025-10-12 10:41:56,223 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1913-propuesta.csv
+2025-10-12 10:41:56,230 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1913-propuesta.csv
+2025-10-12 10:41:56,236 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1914-propuesta.csv
+2025-10-12 10:41:56,242 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1914-propuesta.csv
+2025-10-12 10:41:56,249 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1914-propuesta.csv
+2025-10-12 10:41:56,256 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1914-propuesta.csv
+2025-10-12 10:41:56,268 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1915-propuesta.csv
+2025-10-12 10:41:56,276 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1915-propuesta.csv
+2025-10-12 10:41:56,281 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1915-propuesta.csv
+2025-10-12 10:41:56,290 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1915-propuesta.csv
+2025-10-12 10:41:56,297 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1916-propuesta.csv
+2025-10-12 10:41:56,304 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1916-propuesta.csv
+2025-10-12 10:41:56,311 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1916-propuesta.csv
+2025-10-12 10:41:56,317 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1916-propuesta.csv
+2025-10-12 10:41:56,324 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1917-propuesta.csv
+2025-10-12 10:41:56,331 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1917-propuesta.csv
+2025-10-12 10:41:56,338 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1918-propuesta.csv
+2025-10-12 10:41:56,345 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1919-propuesta.csv
+2025-10-12 10:41:56,353 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1919-propuesta.csv
+2025-10-12 10:41:56,360 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1925-propuesta.csv
+2025-10-12 10:41:56,368 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-1925-propuesta.csv
+2025-10-12 10:41:56,368 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191338-propuesta.zip
+2025-10-12 10:41:56,369 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191528-propuesta.zip
+2025-10-12 10:41:56,370 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191617-propuesta.zip
+2025-10-12 10:41:56,370 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191702-propuesta.zip
+2025-10-12 10:41:56,370 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191931-propuesta.zip
+2025-10-12 10:41:56,371 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191324-propuesta.zip
+2025-10-12 10:41:56,371 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191637-propuesta.zip
+2025-10-12 10:41:56,371 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191056-propuesta.zip
+2025-10-12 10:41:56,372 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191404-propuesta.zip
+2025-10-12 10:41:56,372 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191517-propuesta.zip
+2025-10-12 10:41:56,373 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191352-propuesta.zip
+2025-10-12 10:41:56,373 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191453-propuesta.zip
+2025-10-12 10:41:56,373 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191649-propuesta.zip
+2025-10-12 10:41:56,374 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191039-propuesta.zip
+2025-10-12 10:41:56,375 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191441-propuesta.zip
+2025-10-12 10:41:56,375 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191809-propuesta.zip
+2025-10-12 10:41:56,375 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191554-propuesta.zip
+2025-10-12 10:41:56,376 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191505-propuesta.zip
+2025-10-12 10:41:56,376 - INFO - Archivo comprimido limpiado: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191712-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-190546-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-190956-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191007-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191027-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-192553-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191419-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-192540-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191901-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-190600-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Archivo comprimido limpiado: 10779181575-20250819-191607-propuesta.zip
+2025-10-12 10:41:56,377 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3
+2025-10-12 11:20:55,327 - INFO - Iniciando MODO PRUEBA - Solo archivos NO ETL
+2025-10-12 11:20:55,372 - INFO - Iniciando Fase 1: Escaneo y Clasificación
+2025-10-12 11:21:05,089 - INFO - Procesando archivo comprimido: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 11:21:10,427 - INFO - Duplicado S3: PDF-DOC-E0013620606283858.pdf
+2025-10-12 11:21:14,099 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E0013620606283858.pdf
+2025-10-12 11:21:14,223 - INFO - Duplicado S3: rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 11:21:17,529 - INFO - Eliminado de OneDrive (duplicado): rvalores_10726501306_2251020099411_20250613123042_978958433.pdf
+2025-10-12 11:21:17,649 - INFO - Duplicado S3: rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 11:21:21,383 - INFO - Eliminado de OneDrive (duplicado): rvalores_20606283858_0290078356156_20250623141605_981723330.pdf
+2025-10-12 11:21:21,414 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-190546-propuesta.zip
+2025-10-12 11:21:21,431 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-190600-propuesta.zip
+2025-10-12 11:21:21,444 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-190956-propuesta.zip
+2025-10-12 11:21:21,455 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191007-propuesta.zip
+2025-10-12 11:21:21,465 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191027-propuesta.zip
+2025-10-12 11:21:21,476 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191039-propuesta.zip
+2025-10-12 11:21:21,488 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191056-propuesta.zip
+2025-10-12 11:21:21,499 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191324-propuesta.zip
+2025-10-12 11:21:21,510 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191338-propuesta.zip
+2025-10-12 11:21:21,521 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191352-propuesta.zip
+2025-10-12 11:21:21,531 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191404-propuesta.zip
+2025-10-12 11:21:21,539 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191419-propuesta.zip
+2025-10-12 11:21:21,549 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191441-propuesta.zip
+2025-10-12 11:21:21,557 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191453-propuesta.zip
+2025-10-12 11:21:21,564 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191505-propuesta.zip
+2025-10-12 11:21:21,573 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191517-propuesta.zip
+2025-10-12 11:21:21,581 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191528-propuesta.zip
+2025-10-12 11:21:21,588 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191554-propuesta.zip
+2025-10-12 11:21:21,597 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191607-propuesta.zip
+2025-10-12 11:21:21,605 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191617-propuesta.zip
+2025-10-12 11:21:21,613 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191637-propuesta.zip
+2025-10-12 11:21:21,622 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191649-propuesta.zip
+2025-10-12 11:21:21,631 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191702-propuesta.zip
+2025-10-12 11:21:21,641 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191712-propuesta.zip
+2025-10-12 11:21:21,647 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191809-propuesta.zip
+2025-10-12 11:21:21,657 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191901-propuesta.zip
+2025-10-12 11:21:21,665 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-191931-propuesta.zip
+2025-10-12 11:21:21,673 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-192540-propuesta.zip
+2025-10-12 11:21:21,680 - INFO - Tarea pendiente (modo prueba): 10779181575-20250819-192553-propuesta.zip
+2025-10-12 11:21:21,807 - INFO - Duplicado S3: 20611097400-09-EG07-859.pdf
+2025-10-12 11:21:25,874 - INFO - Eliminado de OneDrive (duplicado): 20611097400-09-EG07-859.pdf
+2025-10-12 11:21:25,999 - INFO - Duplicado S3: 20611097400-09-EG07-860.pdf
+2025-10-12 11:21:31,102 - INFO - Eliminado de OneDrive (duplicado): 20611097400-09-EG07-860.pdf
+2025-10-12 11:21:31,232 - INFO - Duplicado S3: 20613530101-09-EG07-475.pdf
+2025-10-12 11:21:34,480 - INFO - Eliminado de OneDrive (duplicado): 20613530101-09-EG07-475.pdf
+2025-10-12 11:21:34,610 - INFO - Duplicado S3: PDF-DOC-E001108720609672669.pdf
+2025-10-12 11:21:38,064 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E001108720609672669.pdf
+2025-10-12 11:21:38,187 - INFO - Duplicado S3: PDF-DOC-E001109420609672669.pdf
+2025-10-12 11:21:41,850 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E001109420609672669.pdf
+2025-10-12 11:21:41,977 - INFO - Duplicado S3: PDF-DOC-E001-48920613530101.pdf
+2025-10-12 11:21:46,556 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E001-48920613530101.pdf
+2025-10-12 11:21:46,681 - INFO - Duplicado S3: PDF-DOC-E00153220613530101.pdf
+2025-10-12 11:21:49,973 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E00153220613530101.pdf
+2025-10-12 11:21:50,101 - INFO - Duplicado S3: PDF-DOC-E00153420613530101.pdf
+2025-10-12 11:21:53,524 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E00153420613530101.pdf
+2025-10-12 11:21:53,650 - INFO - Duplicado S3: PDF-DOC-E00153920613530101.pdf
+2025-10-12 11:21:56,832 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E00153920613530101.pdf
+2025-10-12 11:21:56,959 - INFO - Duplicado S3: PDF-DOC-E001-87420611097400.pdf
+2025-10-12 11:22:00,382 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E001-87420611097400.pdf
+2025-10-12 11:22:00,506 - INFO - Duplicado S3: PDF-DOC-E001-87520611097400.pdf
+2025-10-12 11:22:03,761 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E001-87520611097400.pdf
+2025-10-12 11:22:03,889 - INFO - Duplicado S3: PDF-DOC-E00190320611097400.pdf
+2025-10-12 11:22:07,157 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E00190320611097400.pdf
+2025-10-12 11:22:07,282 - INFO - Duplicado S3: PDF-DOC-E00190720611097400.pdf
+2025-10-12 11:22:10,972 - INFO - Eliminado de OneDrive (duplicado): PDF-DOC-E00190720611097400.pdf
+2025-10-12 11:22:11,095 - INFO - Duplicado S3: reporteec_rentas_10072541567_20250818224427.pdf
+2025-10-12 11:22:14,730 - INFO - Eliminado de OneDrive (duplicado): reporteec_rentas_10072541567_20250818224427.pdf
+2025-10-12 11:22:14,859 - INFO - Duplicado S3: RHE10406916087E00119.pdf
+2025-10-12 11:22:18,610 - INFO - Eliminado de OneDrive (duplicado): RHE10406916087E00119.pdf
+2025-10-12 11:22:18,733 - INFO - Duplicado S3: rvalores_20548030529_008300520257E1300_20250620120748_981110501.pdf
+2025-10-12 11:22:22,171 - INFO - Eliminado de OneDrive (duplicado): rvalores_20548030529_008300520257E1300_20250620120748_981110501.pdf
+2025-10-12 11:22:22,332 - INFO - Duplicado S3: rvalores_20548030529_008729220257E1300_20250625152654_982771808.pdf
+2025-10-12 11:22:26,391 - INFO - Eliminado de OneDrive (duplicado): rvalores_20548030529_008729220257E1300_20250625152654_982771808.pdf
+2025-10-12 11:22:26,513 - INFO - Duplicado S3: 20553837660-09-EG07-3.pdf
+2025-10-12 11:22:26,693 - INFO - Duplicado S3: 20606283858-09-EG07-33.pdf
+2025-10-12 11:22:26,903 - INFO - Duplicado S3: 20606283858-09-EG07-52.pdf
+2025-10-12 11:22:27,024 - INFO - Duplicado S3: 20606283858-09-EG07-53.pdf
+2025-10-12 11:22:27,147 - INFO - Duplicado S3: 20606482753-09-EG07-169.pdf
+2025-10-12 11:22:27,312 - INFO - Duplicado S3: 20607829986-09-EG07-12.pdf
+2025-10-12 11:22:27,435 - INFO - Duplicado S3: 20607829986-09-EG07-13.pdf
+2025-10-12 11:22:27,558 - INFO - Duplicado S3: 20607829986-09-EG07-14.pdf
+2025-10-12 11:22:27,681 - INFO - Duplicado S3: 20607829986-09-EG07-15.pdf
+2025-10-12 11:22:27,797 - INFO - Duplicado S3: 20609672669-09-EG07-199.pdf
+2025-10-12 11:22:27,927 - INFO - Duplicado S3: 20609672669-09-EG07-200.pdf
+2025-10-12 11:22:28,052 - INFO - Duplicado S3: 20609753723-09-EG07-296.pdf
+2025-10-12 11:22:28,176 - INFO - Duplicado S3: 20611198427-09-EG07-519.pdf
+2025-10-12 11:22:28,334 - INFO - Duplicado S3: 20613333593-09-EG07-266.pdf
+2025-10-12 11:22:28,464 - INFO - Duplicado S3: 20613333593-09-EG07-267.pdf
+2025-10-12 11:22:28,612 - INFO - Duplicado S3: 20613333593-09-EG07-268.pdf
+2025-10-12 11:22:28,744 - INFO - Duplicado S3: 20613333593-09-EG07-58.pdf
+2025-10-12 11:22:28,948 - INFO - Duplicado S3: 20613333593-09-EG07-59.pdf
+2025-10-12 11:22:29,077 - INFO - Duplicado S3: 20613333593-09-EG07-85.pdf
+2025-10-12 11:22:29,253 - INFO - Duplicado S3: 20613333593-09-EG07-86.pdf
+2025-10-12 11:22:29,394 - INFO - Duplicado S3: bod_092660_20551257836_2660.pdf
+2025-10-12 11:22:29,526 - INFO - Duplicado S3: recgen_20606283858_0230069096486_20230310141436_744404039.pdf
+2025-10-12 11:22:29,660 - INFO - Duplicado S3: reporteec_ficharuc_20610428101_20241108095901.pdf
+2025-10-12 11:22:29,782 - INFO - Duplicado S3: reporteec_ficharuc_20610704281_20250129211900.pdf
+2025-10-12 11:22:29,907 - INFO - Duplicado S3: rvalores_10085917213_0290077072146_20241128145831_919009353.pdf
+2025-10-12 11:22:30,038 - INFO - Duplicado S3: rvalores_10085917213_0290077072350_20241128145831_919009286.pdf
+2025-10-12 11:22:30,170 - INFO - Duplicado S3: rvalores_10472830126_007334820247E1300_20240503123616_856598715.pdf
+2025-10-12 11:22:30,360 - INFO - Duplicado S3: rvalores_10472830126_0241803348451_20240610174123_866669833.pdf
+2025-10-12 11:22:30,500 - INFO - Duplicado S3: rvalores_10479567307_22406201308601_20240709155501_875799735.pdf
+2025-10-12 11:22:30,625 - INFO - Duplicado S3: rvalores_10479567307_224062013086_20240708135705_875410937.pdf
+2025-10-12 11:22:30,757 - INFO - Duplicado S3: rvalores_10726501306_000143020247K0200_20240611115429_866892900.pdf
+2025-10-12 11:22:30,882 - INFO - Duplicado S3: rvalores_20522580491_003765820247EC100_20241007100452_902461888.pdf
+2025-10-12 11:22:31,061 - INFO - Duplicado S3: rvalores_20551257836_019854620247E1300_20241114102453_914544250.pdf
+2025-10-12 11:22:31,194 - INFO - Duplicado S3: rvalores_20606283858_002219020227E1110_20220221152232_648859376.pdf
+2025-10-12 11:22:31,407 - INFO - Duplicado S3: rvalores_20606283858_009240320217E1110_20211029150515_604612967.pdf
+2025-10-12 11:22:31,533 - INFO - Duplicado S3: rvalores_20606283858_015952620217E1110_20211216074016_620251038.pdf
+2025-10-12 11:22:31,662 - INFO - Duplicado S3: rvalores_20606283858_0290076816972_20241018143317_905157855.pdf
+2025-10-12 11:22:31,786 - INFO - Duplicado S3: rvalores_20606283858_0290077315631_20250110130548_932952004.pdf
+2025-10-12 11:22:31,935 - INFO - Duplicado S3: rvalores_20609943611_0241803471018_20240703153345_874282322.pdf
+2025-10-12 11:22:32,084 - INFO - Duplicado S3: 20609672669-09-EG07-629.pdf
+2025-10-12 11:22:32,310 - INFO - Duplicado S3: ridetrac_10479567307_0630240159809_20240626165019_871452215.pdf
+2025-10-12 11:22:32,486 - INFO - Duplicado S3: rilf_10726501306_1030240104343_20240417162200_851609467.pdf
+2025-10-12 11:22:32,633 - INFO - Duplicado S3: rmgen_10472830126_023-002-2648606_20240625165955_871057646.pdf
+2025-10-12 11:22:32,756 - INFO - Duplicado S3: rmgen_10479567307_063-002-0168245_20240708120635_875376894.pdf
+2025-10-12 11:22:32,756 - WARNING - No se pudo extraer RUC de constancia_20240610174123_00231800020003472458_0241803348451_866669835.pdf
+2025-10-12 11:22:32,756 - WARNING - No se pudo extraer RUC de constancia_20240626165019_00630240290003515217_0630240159809_871452216.pdf
+2025-10-12 11:22:32,770 - INFO - Tarea pendiente (modo prueba): 10255508739_IDE_01012025.zip
+2025-10-12 11:22:32,778 - INFO - Tarea pendiente (modo prueba): 10726501306_IDE_26122024.zip
+2025-10-12 11:22:32,785 - INFO - Tarea pendiente (modo prueba): 20548030529_TRA_01012025.zip
+2025-10-12 11:22:32,791 - INFO - Tarea pendiente (modo prueba): 20550103746_TRA_01012025.zip
+2025-10-12 11:22:32,798 - INFO - Tarea pendiente (modo prueba): 20605380451_TRA_01012025.zip
+2025-10-12 11:22:32,799 - INFO - Archivo comprimido limpiado: SUNAT_Consolidado_20250817_000358.zip
+2025-10-12 11:22:32,799 - INFO - Modo prueba completado - Solo verificación de conexiones OneDrive/S3

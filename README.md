@@ -65,6 +65,31 @@ Ejecuta el flujo completo:
 2. **Fase 2**: Procesamiento asíncrono de cola
 3. **Fase 3**: Reporte
 
+## Manejo de Archivos Comprimidos
+
+El sistema puede procesar archivos `.zip` y `.rar` que contengan documentos SUNAT:
+
+### Funcionalidad:
+1. **Detección**: Identifica archivos con extensión `.zip` o `.rar`
+2. **Inspección**: Descarga temporal y analiza contenido interno
+3. **Filtrado**: Solo procesa archivos internos que coincidan con patrones SUNAT
+4. **Clasificación**: Aplica misma lógica ETL que archivos normales
+
+### Archivos NO ETL en Comprimidos:
+- Se extraen individualmente del comprimido
+- Se suben a S3 con ruta `RUC/nombre_archivo`
+- El comprimido original permanece en OneDrive
+
+### Archivos NEED ETL en Comprimidos:
+- Se extraen durante el procesamiento ETL
+- Se procesan con pipelines correspondientes
+- Datos se cargan a PostgreSQL
+- Archivos se archivan en S3
+
+### Dependencias:
+- **ZIP**: Incluido en Python estándar
+- **RAR**: Requiere `rarfile` (opcional en requirements.txt)
+
 ## Estrategias de Verificación
 
 - **NO ETL**: Archivos directos (PDFs) - verificación en S3

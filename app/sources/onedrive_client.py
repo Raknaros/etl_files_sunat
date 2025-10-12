@@ -7,34 +7,36 @@ from app.config import config
 
 class OneDriveClient:
     def __init__(self):
-        self.client_id = config.ONEDRIVE_CLIENT_ID
-        self.client_secret = config.ONEDRIVE_CLIENT_SECRET
-        self.tenant_id = config.ONEDRIVE_TENANT_ID
-        self.folder_id = config.ONEDRIVE_FOLDER_ID
-        self.refresh_token = os.getenv('MS_REFRESH_TOKEN')  # Para refresh token si existe
-        # Solo usar refresh token si no es el placeholder
-        self.use_refresh = bool(self.refresh_token and self.refresh_token != 'your_ms_refresh_token')
-        self.scopes = ['Files.ReadWrite.All']
-        self.authority = f"https://login.microsoftonline.com/{self.tenant_id}"
+        # Configuración de Microsoft (igual que en el código de ejemplo)
+        refresh_token = os.getenv('MS_REFRESH_TOKEN')
+        # Solo usar refresh token si no es el placeholder y no está vacío
+        use_refresh = bool(refresh_token and refresh_token.strip() and refresh_token != 'your_ms_refresh_token')
+        self.ms_config = {
+            "client_id": config.ONEDRIVE_CLIENT_ID or os.getenv('MS_CLIENT_ID'),
+            "client_secret": config.ONEDRIVE_CLIENT_SECRET or os.getenv('MS_CLIENT_SECRET'),
+            "refresh_token": refresh_token,
+            "authority": "https://login.microsoftonline.com/common",
+            "scopes": ['Files.ReadWrite.All'],
+            "use_refresh": use_refresh  # True solo si hay refresh token válido
+        }
         self.token = None
 
     def _get_token(self):
-        """Obtiene access token de Microsoft Graph."""
-        if self.use_refresh:
-            # Usar refresh token
-            app = msal.ConfidentialClientApplication(
-                client_id=self.client_id,
-                authority=self.authority,
-                client_credential=self.client_secret
-            )
-            result = app.acquire_token_by_refresh_token(self.refresh_token, scopes=self.scopes)
+        """Obtiene access token de Microsoft Graph usando Public Client (compatible con refresh tokens de device flow)."""
+        config_ms = self.ms_config
+
+        # Siempre usar PublicClientApplication (compatible con refresh tokens de device flow)
+        app = msal.PublicClientApplication(
+            client_id=config_ms["client_id"],
+            authority=config_ms["authority"]
+        )
+
+        if config_ms.get("use_refresh"):
+            # Usar refresh token con Public Client
+            result = app.acquire_token_by_refresh_token(config_ms["refresh_token"], scopes=config_ms["scopes"])
         else:
             # Usar device flow
-            app = msal.PublicClientApplication(
-                client_id=self.client_id,
-                authority=self.authority
-            )
-            flow = app.initiate_device_flow(scopes=self.scopes)
+            flow = app.initiate_device_flow(scopes=config_ms["scopes"])
             if "user_code" not in flow:
                 raise ValueError("Fallo al crear el flujo de dispositivo.", flow.get("error_description"))
 
@@ -56,10 +58,11 @@ class OneDriveClient:
         en OneDrive usando el endpoint de children.
         Retorna lista de dicts con info de archivos.
         """
-        if not self.token:
-            self._get_token()
+        # Obtener token primero
+        token = self._get_token()
 
-        headers = {'Authorization': 'Bearer ' + self.token}
+        # Usar la lógica del código de ejemplo
+        headers = {'Authorization': 'Bearer ' + token}
         archivos_totales = []
 
         def recurse(current_path):
@@ -91,10 +94,8 @@ class OneDriveClient:
         """
         Obtiene la URL de descarga de un archivo usando su ID.
         """
-        if not self.token:
-            self._get_token()
-
-        headers = {'Authorization': 'Bearer ' + self.token}
+        token = self._get_token()
+        headers = {'Authorization': 'Bearer ' + token}
         endpoint = f"https://graph.microsoft.com/v1.0/me/drive/items/{file_id}"
 
         try:
@@ -115,6 +116,22 @@ class OneDriveClient:
             with open(local_path, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=8192):
                     f.write(chunk)
+
+    def delete_file(self, file_id):
+        """
+        Elimina un archivo de OneDrive usando su ID.
+        """
+        token = self._get_token()
+        headers = {'Authorization': 'Bearer ' + token}
+        endpoint = f"https://graph.microsoft.com/v1.0/me/drive/items/{file_id}"
+
+        try:
+            response = requests.delete(endpoint, headers=headers)
+            response.raise_for_status()
+            return True
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Error al eliminar archivo {file_id}: {e}")
+            return False
 
 # Instancia
 onedrive_client = OneDriveClient()

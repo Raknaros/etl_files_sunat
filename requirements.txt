@@ -5,3 +5,4 @@ python-dotenv
 requests
 httpx  # Para llamadas asíncronas a APIs
 msal  # Para autenticación Microsoft
+rarfile  # Para archivos RAR (opcional)
