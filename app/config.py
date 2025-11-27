@@ -9,10 +9,10 @@ load_dotenv()
 PATRONES_NO_ETL = {
     "ficha_ruc": (re.compile(r"^reporteec_ficharuc_(\d{11})_(\d{14})\.(pdf)$", re.IGNORECASE), ["ruc", "timestamp", "ext"]),
     "ingreso_recaudacion": (re.compile(r"^ridetrac_(\d{11})_(\d{13})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]),
-    "liberacion_fondos": (re.compile(r"^rilf_(\d{11})_(\d{13})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]), 
+    "liberacion_fondos": (re.compile(r"^rilf_(\d{11})_(\d{13})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]),
     "multa": (re.compile(r"^rmgen_(\d{11})_(\d{3}-\d{3}-\d{7})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]),
     "notificacion": (re.compile(r"^constancia_(\d{14})_(\d{20})_(\d{13})_(\d{9})\.(pdf)$", re.IGNORECASE), ["timestamp", "resolucion", "constancia", "id", "ext"]),
-    "valores": (re.compile(r"^rvalores_(\d{11})_([A-Z0-9]{12,17})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "esquela", "timestamp", "id", "ext"]), 
+    "valores": (re.compile(r"^rvalores_(\d{11})_([A-Z0-9]{12,17})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "esquela", "timestamp", "id", "ext"]),
     "ejecucion": (re.compile(r"^recgen_(\d{11})_(\d{13})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]),
     "baja_oficio": (re.compile(r"^bod_(\d{6})_(\d{11})_(\d{4})\.(pdf)$", re.IGNORECASE), ["codigo", "ruc", "formulario", "ext"]),
     "coactiva": (re.compile(r"^rcce_(\d{11})_ (\d{13})_(\d{14})_(\d{9})\.(pdf)$", re.IGNORECASE), ["ruc", "resolucion", "timestamp", "id", "ext"]),
@@ -25,16 +25,16 @@ PATRONES_NO_ETL = {
     "debito_pdf": (re.compile(r"^PDF-NOTA_DEBITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(pdf)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "recibo_honorarios_pdf": (re.compile(r"^RHE(\d{11})([A-Z0-9]{4})(\d{1,8})\.(pdf)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
     "guia_remision_pdf": (re.compile(r"^(\d{11})-09-([A-Z0-9]{4})-(\d{1,8})\.(pdf)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
-
 }
+
 PATRONES_NEED_ETL = {
     # Archivos individuales que necesitan ETL
     "declaraciones_pagos": (re.compile(r"^DetalleDeclaraciones_(\d{11})_(\d{14})\.(xlsx)$", re.IGNORECASE), ["ruc", "timestamp", "ext"]),
     "guia_remision_xml": (re.compile(r"^(\d{11})-09-([A-Z0-9]{4})-(\d{1,8})\.(xml)$", re.IGNORECASE), ["ruc", "serie", "correlativo", "ext"]),
 
-    # ZIPs estructurados que necesitan ETL (tratados como archivos individuales)
-    "sire_propuesta_compras": (re.compile(r"^(\d{11})-(\d{8})-(\d{4,6})-propuesta\.(zip|csv)$", re.IGNORECASE), ["ruc", "date", "time"]),
-    "sire_propuesta_ventas": (re.compile(r"^LE(\d{11})(\d{6})1?(\d{10})EXP2\.(zip|csv)$", re.IGNORECASE), ["ruc", "periodo", "codigo"]),
+    # ZIPs estructurados que necesitan ETL
+    "sire_compras": (re.compile(r"^(\d{11})-\d{8}-\d{4,6}-propuesta\.(zip|txt)$", re.IGNORECASE), ["ruc"]),
+    "sire_ventas": (re.compile(r"^LE(\d{11})\d{6}1?\d+EXP2\.(zip|txt)$", re.IGNORECASE), ["ruc"]),
     "factura_xml": (re.compile(r"^FACTURA([A-Z0-9]{4})-?(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "boleta_xml": (re.compile(r"^BOLETA([A-Z0-9]{4})-(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
     "credito_xml": (re.compile(r"^NOTA_CREDITO([A-Z0-9]{4})_?(\d{1,8})(\d{11})\.(zip|xml)$", re.IGNORECASE), ["serie", "correlativo", "ruc", "ext"]),
@@ -42,6 +42,49 @@ PATRONES_NEED_ETL = {
     "recibo_xml": (re.compile(r"^RHE(\d{11})(\d{1,8})\.(xml)$", re.IGNORECASE), ["ruc", "correlativo", "ext"]),
     "reporte_planilla_zip": (re.compile(r"^(\d{11})_([A-Z]{3})+_(\d{8})\.(zip)$", re.IGNORECASE), ["ruc", "codigo", "fecha", "ext"]),
 }
+
+# Mapeo de columnas para SIRE Compras
+COLUMN_MAPPING_COMPRAS = {
+    'RUC': 'ruc',
+    'Periodo': 'periodo_tributario',
+    'CAR SUNAT': 'observaciones',
+    'Fecha de emisión': 'fecha_emision',
+    'Fecha Vcto/Pago': 'fecha_vencimiento',
+    'Tipo CP/Doc.': 'tipo_comprobante',
+    'Serie del CDP': 'numero_serie',
+    'Nro CP o Doc. Nro Inicial (Rango)': 'numero_correlativo',
+    'Tipo Doc Identidad': 'tipo_documento',
+    'Nro Doc Identidad': 'numero_documento',
+    'ISC': 'isc',
+    'ICBPER': 'icbp',
+    'Moneda': 'tipo_moneda',
+    'Tipo CP Modificado': 'tipo_comprobante_modificado',
+    'Serie CP Modificado': 'numero_serie_modificado',
+    'Nro CP Modificado': 'numero_correlativo_modificado',
+    'Detracción': 'tasa_detraccion',
+}
+
+# Mapeo de columnas para SIRE Ventas
+COLUMN_MAPPING_VENTAS = {
+    'Ruc': 'ruc',
+    'Periodo': 'periodo_tributario',
+    'CAR SUNAT': 'observaciones',
+    'Fecha de emisión': 'fecha_emision',
+    'Fecha Vcto/Pago': 'fecha_vencimiento',
+    'Tipo CP/Doc.': 'tipo_comprobante',
+    'Serie del CDP': 'numero_serie',
+    'Nro CP o Doc. Nro Inicial (Rango)': 'numero_correlativo',
+    'Nro Final (Rango)': 'numero_final',
+    'Tipo Doc Identidad': 'tipo_documento',
+    'Nro Doc Identidad': 'numero_documento',
+    'ISC': 'isc',
+    'ICBPER': 'icbp',
+    'Moneda': 'tipo_moneda',
+    'Tipo CP Modificado': 'tipo_comprobante_modificado',
+    'Serie CP Modificado': 'numero_serie_modificado',
+    'Nro CP Modificado': 'numero_correlativo_modificado',
+}
+
 
 class Config:
     # OneDrive
@@ -52,22 +95,25 @@ class Config:
 
     # S3
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_key')
     AWS_S3_BUCKET_NAME = os.getenv('AWS_S3_BUCKET_NAME')
 
-    # PostgreSQL
-    POSTGRES_HOST = os.getenv('POSTGRES_HOST')
-    POSTGRES_PORT = int(os.getenv('POSTGRES_PORT', 5432))
-    POSTGRES_DB = os.getenv('POSTGRES_DB')
+    # --- PostgreSQL: ÚNICA FUENTE DE VERDAD ---
     POSTGRES_USER = os.getenv('POSTGRES_USER')
     POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD')
+    POSTGRES_HOST = os.getenv('POSTGRES_HOST')
+    POSTGRES_PORT = os.getenv('POSTGRES_PORT', '5432')
+    POSTGRES_DB = os.getenv('POSTGRES_DB')
+
+    # URL de conexión para SQLAlchemy, usada en toda la aplicación
+    DB_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
     # SQLite Queue
     QUEUE_DB_PATH = os.getenv('QUEUE_DB_PATH', 'queue.db')
 
     # Logging
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
-    LOG_FILE = os.getenv('LOG_FILE', 'etl_log.log')
+    LOG_FILE = os.getenv('LOG_FILE', 'etl_sire.log')
 
     # Email
     EMAIL_SMTP_SERVER = os.getenv('EMAIL_SMTP_SERVER')
@@ -77,8 +123,13 @@ class Config:
     EMAIL_TO = os.getenv('EMAIL_TO')
 
     # Patrones de archivos
-    FILE_PATTERNS_NEED_ETL = list(PATRONES_NEED_ETL.keys())  # Tipos que necesitan ETL
-    FILE_PATTERNS_NO_ETL = list(PATRONES_NO_ETL.keys())  # Tipos que no necesitan ETL
+    FILE_PATTERNS_NEED_ETL = list(PATRONES_NEED_ETL.keys())
+    FILE_PATTERNS_NO_ETL = list(PATRONES_NO_ETL.keys())
+
+    # Mapeos de columnas
+    COLUMN_MAPPING_COMPRAS = COLUMN_MAPPING_COMPRAS
+    COLUMN_MAPPING_VENTAS = COLUMN_MAPPING_VENTAS
+
 
 # Instancia de configuración
 config = Config()
